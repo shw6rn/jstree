@@ -2448,6 +2448,11 @@
 			if(this.settings.core.force_text) {
 				node.childNodes[1].appendChild(d.createTextNode(obj.text));
 			}
+
+			else if(obj.element) {
+				node.childNodes[1].appendChild(obj.element);
+			}
+
 			else {
 				node.childNodes[1].innerHTML += obj.text;
 			}
